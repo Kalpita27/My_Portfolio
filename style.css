@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&family=Tangerine:wght@400;700&display=swap');
+
+*{
+     font-family: "Cinzel", serif;
+     scroll-behavior: smooth;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Tangerine", cursive; */
+    /* font-family: "Kalnia Glaze", system-ui; */
+}
+.header{
+    /* font-family: "Cinzel", serif;
+    font-family: "Tangerine", cursive;
+    font-family: "Kalnia Glaze", system-ui; */
+}
+
+/* /////////ABOUT////////////////// */
+#about .education,
+#about .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+#about h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+#about .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+#about .timeline{
+    background-color: rgba(246, 237, 237, 0.974);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    transition: 0.3s;
+}
+
+#about .timeline:hover{
+   
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.578);
+        transform: translateY(-20px);
+    
+}
+
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+#about  .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+#about .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+
+#about .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: rgb(27, 125, 222);
+}
+
+#about .timeline .timeline-item .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(23, 118, 235);
+}
+
+#about .timeline .timeline-item .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+#about .timeline .timeline-item {
+    margin-right: 5px;
+}
+
+#about .timeline .timeline-item .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: black;
+}
+
+#about .timeline .timeline-item .timeline-company{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: black;
+}
+
+#about .timeline .timeline-item .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: black;
+}
+
+/* /////Service */
+/* #services{
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+} */
+
+/* if in dark theme want black color box then remove this css */
+/* #services .box{
+    transition: 0.4s ease;
+   background-color: #fff;
+}
+#services .box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+} */
+
+#services .box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* #contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.7)), url('./images/bg2.jpg');
+
+} */
